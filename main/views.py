@@ -7,14 +7,14 @@ from .models import Product
 
 def home(request):
     pagename = 'Home'
-    name = 'DCUK'
+    name = 'Your Shop'
     return render(request,
                   context={'pagename':pagename,'name':name},
                   template_name='nav.html' )
 
 def contact(request):
     pagename = 'Contact Us'
-    name = 'DCUK'
+    name = 'Your Shop'
     return render(request,
                   context={'pagename':pagename,'name':name},
 
@@ -23,7 +23,7 @@ def contact(request):
 
 def products(request):
     pagename = 'Products'
-    name = 'DCUK'
+    name = 'Your Shop'
     prods = Product.objects.all()
     return render(request,
                   context={'pagename':pagename,'name':name,'prods':prods},
