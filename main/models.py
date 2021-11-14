@@ -9,6 +9,13 @@ class Product(models.Model):
     price = models.IntegerField(
         default=0
     )
+    instock = models.BooleanField(
+        default = True
+    )
+    quantity = models.IntegerField(
+        default=1
+    )
+
 
     def __str__(self):
-        return self.name
+        return {self.name}
