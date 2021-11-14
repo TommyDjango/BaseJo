@@ -18,4 +18,4 @@ class Product(models.Model):
 
 
     def __str__(self):
-        return {self.name}
+        return f'{self.name},{self.price},{self.instock},{self.quantity}'
