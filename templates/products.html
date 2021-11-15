@@ -14,11 +14,13 @@
 
 <table>
     <tr>Products</tr>
+<th>Name</th>
+<th>Price</th>
 {% for p in prods %}
-
-    <tr><td>Name</td> <td>{{p.name}}</td></tr>
-    <tr><td>Price</td><td>{{p.price}}</td></tr>
-
+<tr>
+    <td>Name - {{p.name}}</td>
+   <td>Price- {{p.price}}</td>
+</tr>
 
   {% endfor %}
 
